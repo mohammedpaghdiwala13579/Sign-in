@@ -145,9 +145,10 @@
       const pass = document.getElementById('password').value;
 
       if (id === VALID_ID && pass === VALID_PASSWORD) {
-        window.location.href = "teacher.html";   // your main portal file
+        // Redirect to the live Parent Portal site
+        window.location.href = "https://tanbeeh-tashjee.vercel.app/";
       } else {
-        // Silently clear fields only — no error message at all
+        // Silently clear fields — no error message
         document.getElementById('teacherId').value = '';
         document.getElementById('password').value = '';
         document.getElementById('teacherId').focus();
